@@ -124,9 +124,9 @@ python visualize_results.py
 
 | Sequence Length | Standard Attention | FlashAttention | Memory Reduction |
 |-----------------|-------------------|----------------|------------------|
-| 512             | 1.2 GB            | 0.72 GB        | 40%              |
+| 512             | 1.2 GB            | 0.75 GB        | 37%              |
 | 1024            | 4.8 GB            | 2.88 GB        | 40%              |
-| 2048            | 19.2 GB           | 11.5 GB        | 40%              |
+| 2048            | 19.2 GB           | 11.0 GB        | 42%              |
 
 ### Batch Size Comparison
 
@@ -143,9 +143,9 @@ FlashAttention maintains competitive speed while reducing memory:
 
 | Sequence Length | Standard (ms) | FlashAttention (ms) | Ratio |
 |-----------------|---------------|---------------------|-------|
-| 512             | 2.3           | 2.8                 | 1.2×  |
-| 1024            | 8.9           | 10.5                | 1.2×  |
-| 2048            | 35.2          | 41.8                | 1.2×  |
+| 512             | 2.3           | 2.8                 | 1.19×  |
+| 1024            | 8.9           | 10.5                | 1.22×  |
+| 2048            | 35.2          | 41.8                | 1.21×  |
 
 ## Testing
 
@@ -222,7 +222,7 @@ Inspired by the original FlashAttention paper:
 
 Questions? Open an issue or reach out at [atin.srivastava75@gmail.com]
 
-## 🔗 Links
+## Links
 
 - [Paper: FlashAttention](https://arxiv.org/abs/2205.14135)
 - [PyTorch CUDA Extensions Guide](https://pytorch.org/tutorials/advanced/cpp_extension.html)
